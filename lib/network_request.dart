@@ -18,7 +18,7 @@ class FetchNetworkData {
             jsonList.map((json) => User.fromJson(json)).toList();
         return right(users);
       }
-      throw 'Some unexpected error occurred!';
+      throw 'Some unexpected error occurred! fron network';
     } catch (e) {
       return left(e.toString());
     }
